@@ -1,0 +1,45 @@
+.image-thumb{
+  width : 80px;
+  height: auto;
+  margin-right: 20px;
+  float: left;
+}
+.album-image{
+  width: 80 px;
+  height: 100px;
+}
+.artist-header{
+  padding :20px;
+  border: 1px solid grey;
+}
+.album{
+  text-align: center;
+  min-height: 300px;
+  overflow: auto;
+
+}
+.album .well{
+
+
+}
+.album-container{
+
+
+}
+
+.album-header{
+  text-align: center;
+}
+.album-actions{
+
+
+}
+.album-title{
+
+
+}
+.album-details {
+
+  min-height : 100px;
+  overflow: auto;
+}

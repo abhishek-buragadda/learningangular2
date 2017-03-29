@@ -1,0 +1,31 @@
+<div *ngIf="album" class="album-container">
+
+   <header class='album-header'>
+      <img src="{{album.images[0].url}}"  class='album-image img-thumbnail' alt="">
+      <h4>{{album.name}}</h4>
+      <div class="">
+        Genre:<span class="" *ngFor="let genre of album.genres">
+              {{genre}}
+        </span>
+      </div>
+
+   </header>
+
+   <div class="album-tracks">
+
+      <div class="" *ngFor="let track of album.tracks.items">
+        <div class="well album-details ">
+          <div class="col-md-9">
+              <h4>{{track.name}}</h4>
+              <span>duration: {{ (track.duration_ms/(1000*60)) | number :'1.2-2' }} min</span>
+          </div>
+          <div class="col-md-3">
+            <a class="btn btn-primary" href="{{track.preview_url}}" target="_blank">Preview track</a>
+            <a  class="btn btn-success" href="{{track.external_urls.spotify}}" target="_blank">View in Spotify</a>
+          </div>
+        </div>
+      </div>
+
+   </div>
+
+</div>
